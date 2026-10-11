@@ -1,0 +1,147 @@
+{
+  "note": "Sample synthetic run; graph-routing analogy only.",
+  "experiment": {
+    "load_ticks": 20,
+    "injection_per_tick_at_M1": 2,
+    "deadline_ticks": 5,
+    "trace_ticks_including_deadline_window": 25,
+    "identical_injection_trace": true,
+    "identical_absorption_request_trace": true
+  },
+  "matched_budgets": {
+    "total_capacity_per_tick": 8,
+    "capacity_weighted_nominal_loss_per_tick": "2/5",
+    "shortcut_off_directed_edges": 4,
+    "shortcut_on_directed_edges": 6
+  },
+  "shortcut_off": {
+    "allowed_edge_matrix": [
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        0
+      ]
+    ],
+    "edge_settings": {
+      "M1->M2": {
+        "capacity_per_tick": 2,
+        "latency_ticks": 1,
+        "loss_rate": "1/20"
+      },
+      "M2->M1": {
+        "capacity_per_tick": 2,
+        "latency_ticks": 1,
+        "loss_rate": "1/20"
+      },
+      "M2->M3": {
+        "capacity_per_tick": 2,
+        "latency_ticks": 1,
+        "loss_rate": "1/20"
+      },
+      "M3->M2": {
+        "capacity_per_tick": 2,
+        "latency_ticks": 1,
+        "loss_rate": "1/20"
+      }
+    },
+    "summary": {
+      "ticks": 25,
+      "deadline_ticks": 5,
+      "injected": 40,
+      "delivered_to_destination": 37,
+      "delivered_by_deadline": 37,
+      "delivery_by_deadline_fraction": 0.925,
+      "delivery_by_deadline_percent": 92.5,
+      "mean_latency_ticks_given_delivered": 2.0,
+      "median_latency_ticks_given_delivered": 2,
+      "losses": 3,
+      "absorbed_elsewhere": 0,
+      "undelivered_at_horizon": 0,
+      "final_backlog": 0,
+      "peak_backlog": 4,
+      "final_in_flight": 0,
+      "final_ready": 0,
+      "max_conservation_residual": 0
+    }
+  },
+  "shortcut_on": {
+    "allowed_edge_matrix": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        0
+      ]
+    ],
+    "edge_settings": {
+      "M1->M2": {
+        "capacity_per_tick": 1,
+        "latency_ticks": 1,
+        "loss_rate": "1/20"
+      },
+      "M1->M3": {
+        "capacity_per_tick": 2,
+        "latency_ticks": 1,
+        "loss_rate": "1/20"
+      },
+      "M2->M1": {
+        "capacity_per_tick": 1,
+        "latency_ticks": 1,
+        "loss_rate": "1/20"
+      },
+      "M2->M3": {
+        "capacity_per_tick": 1,
+        "latency_ticks": 1,
+        "loss_rate": "1/20"
+      },
+      "M3->M1": {
+        "capacity_per_tick": 2,
+        "latency_ticks": 1,
+        "loss_rate": "1/20"
+      },
+      "M3->M2": {
+        "capacity_per_tick": 1,
+        "latency_ticks": 1,
+        "loss_rate": "1/20"
+      }
+    },
+    "summary": {
+      "ticks": 25,
+      "deadline_ticks": 5,
+      "injected": 40,
+      "delivered_to_destination": 38,
+      "delivered_by_deadline": 38,
+      "delivery_by_deadline_fraction": 0.95,
+      "delivery_by_deadline_percent": 95.0,
+      "mean_latency_ticks_given_delivered": 1.0,
+      "median_latency_ticks_given_delivered": 1,
+      "losses": 2,
+      "absorbed_elsewhere": 0,
+      "undelivered_at_horizon": 0,
+      "final_backlog": 0,
+      "peak_backlog": 2,
+      "final_in_flight": 0,
+      "final_ready": 0,
+      "max_conservation_residual": 0
+    }
+  }
+}
