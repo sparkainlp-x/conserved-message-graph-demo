@@ -1,0 +1,37 @@
+{
+  "upload_type": "software",
+  "title": "Three-Node Graph Routing Simulation: conserved-message ledger with an optional shortcut edge",
+  "version": "0.1.0",
+  "description": "<p>A small, dependency-free Python discrete-event simulation that compares a three-node message-routing graph with and without an optional bidirectional M1-M3 shortcut, under a matched capacity and loss budget.</p><p>Each directed edge has its own capacity, latency and deterministic loss quota. Every tick asserts the conserved-message ledger (change in inventory = injections - absorptions - losses). The tool reports delivery by deadline, conditional latency, undelivered messages, backlog and losses, and includes a stress sweep across offered rates.</p><p>Scope: a graph-routing analogy only. The 'white-hole-like', 'black-hole-like' and 'wormhole-like' labels refer to injection, absorption and the optional edge; the code does not model general relativity, spacetime, physical membranes or any OES32 feature. All results are SYNTHETIC.</p><p>Python 3.10+, standard library only. 11 unittest tests and the stress sweep run in GitHub Actions. License: AGPL-3.0-only.</p>",
+  "creators": [
+    {
+      "name": "Brisson, Jean-François",
+      "affiliation": "Spark AI NLP, Fredericton, New Brunswick, Canada",
+      "orcid": "0009-0000-9778-5374"
+    }
+  ],
+  "access_right": "open",
+  "license": "AGPL-3.0-only",
+  "language": "eng",
+  "keywords": [
+    "research software",
+    "discrete-event simulation",
+    "graph routing",
+    "conservation ledger",
+    "synthetic data",
+    "Python",
+    "New Brunswick"
+  ],
+  "communities": [
+    {
+      "identifier": "spark-ai-nlp"
+    }
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/sparkainlp-x/conserved-message-graph-demo",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}
