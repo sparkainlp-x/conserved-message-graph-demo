@@ -7,6 +7,14 @@ authors:
     given-names: Jean-François
     affiliation: "Spark AI NLP, Fredericton, New Brunswick, Canada"
     orcid: "https://orcid.org/0009-0000-9778-5374"
+doi: "10.5281/zenodo.23308959"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23308959"
+    description: "Concept DOI (all versions)"
+  - type: doi
+    value: "10.5281/zenodo.23308960"
+    description: "Version DOI for v0.1.0"
 repository-code: "https://github.com/sparkainlp-x/conserved-message-graph-demo"
 url: "https://sparkainlpx.xyz"
 abstract: >-
@@ -32,4 +40,4 @@ keywords:
   - New Brunswick
 license: AGPL-3.0-only
 version: "0.1.0"
-date-released: "2026-10-11"
+date-released: "2026-10-12"

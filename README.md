@@ -1,5 +1,7 @@
 # Three-Node Graph Routing Simulation
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23308959.svg)](https://doi.org/10.5281/zenodo.23308959)
+
 A small, dependency-free Python simulation for comparing a three-node graph with and without a hypothetical bidirectional shortcut.
 
 > This is a **graph-routing analogy only**. “White-hole-like” means external injection, “black-hole-like” means external absorption, and “wormhole-like” refers only to the optional M1↔M3 graph edge. The code does not model general relativity, physical membranes, spacetime, physical transport, or OES32 behavior.
@@ -79,3 +81,7 @@ The `--json` option prints the full per-tick ledgers as well as summaries. Impor
 ## Scope and limitations
 
 This is synthetic discrete-event code for an illustrative graph-routing comparison. Routing uses the lowest total-latency available simple path, with deterministic tie-breaking and per-tick first-edge capacity. A batch can split across routes if an edge’s capacity is exhausted. Loss is deterministic bookkeeping using a cumulative rational quota, not random noise or a physical loss law. No result is a claim about physical membranes, black holes, wormholes, OES32, or real-world network performance.
+
+## Cite
+
+Concept DOI (all versions): [10.5281/zenodo.23308959](https://doi.org/10.5281/zenodo.23308959). v0.1.0: [10.5281/zenodo.23308960](https://doi.org/10.5281/zenodo.23308960). See [CITATION.cff](CITATION.cff).
